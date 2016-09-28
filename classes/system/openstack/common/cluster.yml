@@ -79,17 +79,17 @@ parameters:
           - ctl03
           - ctl03.vagrant.vm
         web01:
-          address: 192.168.200.204
+          address: 192.168.200.104
           names:
           - web01
           - web01.vagrant.vm
         cpt01:
-          address: 192.168.200.205
+          address: 192.168.200.105
           names:
           - cpt01
           - cpt01.vagrant.vm
         cpt02:
-          address: 192.168.200.206
+          address: 192.168.200.106
           names:
           - cpt02
           - cpt02.vagrant.vm
