@@ -1,0 +1,20 @@
+classes:
+  - service.git.client
+  - system.linux.system.single
+  - system.openssh.client.workshop
+  - system.salt.master.single
+  - system.reclass.storage.salt
+  - system.reclass.storage.system.mitaka_ubuntu_opencontrail_cluster.yml
+parameters:
+  _param:
+    reclass_data_repository: https://github.com/linuxsimba/openstack-salt-model.git
+    reclass_data_revision: master
+    reclass_config_master: 192.168.200.7
+    single_address: 192.168.200.7
+    salt_master_host: 127.0.0.1
+    salt_master_base_environment: prd
+  linux:
+    system:
+      name: cfg01
+      domain: vagrant.vm
+
