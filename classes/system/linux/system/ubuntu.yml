@@ -4,6 +4,17 @@ classes:
 - service.salt.minion.master
 - system.openssh.server.single
 parameters:
+  ntp:
+    client:
+      enabled: true
+      strata:
+        - 0.centos.pool.ntp.org
+        - 1.centos.pool.ntp.org
+  salt:
+    minion:
+      enabled: true
+      master:
+        host: salt
   linux:
     system:
       repo:
