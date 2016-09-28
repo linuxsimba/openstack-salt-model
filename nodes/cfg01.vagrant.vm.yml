@@ -4,7 +4,7 @@ classes:
   - system.openssh.client.workshop
   - system.salt.master.single
   - system.reclass.storage.salt
-  - system.reclass.storage.system.mitaka_ubuntu_opencontrail_cluster
+  - system.reclass.storage.system.liberty_ubuntu_opencontrail_cluster
 parameters:
   _param:
     reclass_data_repository: https://github.com/linuxsimba/openstack-salt-model.git
