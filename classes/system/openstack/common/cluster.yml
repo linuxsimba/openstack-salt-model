@@ -11,11 +11,11 @@ parameters:
     galera_server_admin_password: workshop
     cluster_vip_address: 192.168.200.110
     cluster_local_address: ${_param:single_address}
-    cluster_node01_hostname: ctl01.vagrant.vm
+    cluster_node01_hostname: ctl01
     cluster_node01_address: 192.168.200.101
-    cluster_node02_hostname: ctl02.vagrant.vm
+    cluster_node02_hostname: ctl02
     cluster_node02_address: 192.168.200.102
-    cluster_node03_hostname: ctl03.vagrant.vm
+    cluster_node03_hostname: ctl03
     cluster_node03_address: 192.168.200.103
     rabbitmq_secret_key: workshop
     rabbitmq_admin_password: workshop
