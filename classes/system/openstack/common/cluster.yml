@@ -61,11 +61,12 @@ parameters:
     horizon_identity_encryption: none
     horizon_identity_version: 3
   rabbitmq:
-    virtual_hosts:
-    - enabled: true
-      host: '/openstack'
-      user: 'openstack'
-      psasword: 'workshop'
+    server:
+      virtual_hosts:
+        - enabled: true
+          host: '/openstack'
+          user: 'openstack'
+          password: 'workshop'
   linux:
     network:
       host:
