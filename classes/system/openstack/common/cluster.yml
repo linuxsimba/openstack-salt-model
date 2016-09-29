@@ -3,7 +3,7 @@ parameters:
     admin_email: root@localhost
     cluster_public_host: _
     openstack_version: liberty
-    opencontrail_version: 3.0
+    opencontrail_version: 2.2
     opencontrail_compute_dns: 8.8.8.8
     opencontrail_stats_password: contrail123
     galera_server_cluster_name: openstack_cluster
