@@ -14,6 +14,7 @@ parameters:
     salt_master_host: 127.0.0.1
     salt_master_base_environment: prd
   linux:
+    timezone: 'US/Pacific'
     system:
       name: cfg01
       domain: vagrant.vm
