@@ -20,15 +20,15 @@ parameters:
       timezone: 'US/Pacific'
       repo:
         mirantis_main:
-          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0 mos9.0 main restricted"
+          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0 mos8.0 main restricted"
           architectures: amd64
-          key_url: "http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/archive-mos9.0.key"
+          key_url: "http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0/archive-mos8.0.key"
 
         mirantis_updates:
-          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/ mos9.0-updates main restricted"
+          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0/ mos8.0-updates main restricted"
           architectures: amd64
         mirantis_security:
-          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/ mos9.0-security main restricted"
+          source: "deb [arch=amd64] http://mirror.fuel-infra.org/mos-repos/ubuntu/8.0/ mos8.0-security main restricted"
           architecture: amd64
 
   _param:
