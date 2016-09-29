@@ -60,6 +60,12 @@ parameters:
     horizon_identity_host: ${_param:cluster_vip_address}
     horizon_identity_encryption: none
     horizon_identity_version: 3
+  rabbitmq:
+    virtual_hosts:
+    - enabled: true
+      host: '/openstack'
+      user: 'openstack'
+      psasword: 'workshop'
   linux:
     network:
       host:
