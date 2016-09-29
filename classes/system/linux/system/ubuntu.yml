@@ -18,12 +18,20 @@ parameters:
   linux:
     system:
       repo:
-        tcpcloud:
-          source: "deb [arch=amd64] http://apt.tcpcloud.eu/testing/ trusty main security extra tcp"
+        mirantis_main:
+          source: "deb [arch=amd64] http://mirror.fuel-infra.org/ubuntu/9.0 main restricted"
           architectures: amd64
           default: true
-          key_url: "http://apt.tcpcloud.eu/public.gpg"
+        mirantis_updates:
+          source: "deb [arch=amd64] deb http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/ mos9.0-updates main restricted"
+          architectures: amd64
+          default: true
+        mirantis_security:
+          source: "deb [arch=amd64] deb http://mirror.fuel-infra.org/mos-repos/ubuntu/9.0/ mos9.0-security main restricted"
+          architecture: amd64
+          default: true
+
   _param:
-    heka_amqp_host: 172.16.10.110
+    heka_amqp_host: 192.168.200.4
     heka_amqp_password: Use.toylett1823
-    heka_elasticsearch_host: 172.16.10.110
+    heka_elasticsearch_host: 192.168.200.4
