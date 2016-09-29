@@ -16,8 +16,8 @@ parameters:
       master:
         host: salt
   linux:
-    timezone: 'US/Pacific'
     system:
+      timezone: 'US/Pacific'
       repo:
         ubuntu_main
         mirantis_main:
