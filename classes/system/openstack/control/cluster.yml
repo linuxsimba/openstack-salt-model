@@ -18,6 +18,17 @@ classes:
 - system.opencontrail.control.cluster
 - system.openstack.common.cluster
 parameters:
+  rabbitmq:
+    server:
+      host:
+        '/openstack':
+          enabled: true
+          user: 'openstack'
+          password: ${_param:rabbitmq_openstack_password}
+          policies:
+            - name: HA
+              pattern: '^(?!amq\.).*'
+              definition: '{"ha-mode": "all", "message-ttl": 120000}'
   linux:
     system:
       repo:
