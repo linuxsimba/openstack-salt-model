@@ -18,11 +18,3 @@ parameters:
       timezone: 'US/Pacific'
       name: cfg01
       domain: vagrant.vm
-  salt:
-    master:
-      enabled: true
-      environment:
-        prd:
-          keystone:
-            source: pkg
-            name: salt-formula-keystone
